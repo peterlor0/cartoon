@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>cartoon-project</title>
+    <!-- <link href="style.css" rel="stylesheet"> -->
+    <script>
+      function changeCanvasColor() {
+        // Locate the element "mycanvas" in the document.
+        var canvas = document.getElementById("mycanvas");
+        var context = canvas.getContext("2d");
+
+        context.fillStyle = "#daf1f5";
+        context.fillRect(0, 0, 800, 600);
+
+        context.font = "30px Arial";
+        context.textAlign = "center";
+        context.fillStyle = "black";
+        context.fillText("Cartoon-Project", 400, 30);
+
+        //Sun
+        context.beginPath();
+        context.arc(75, 60, 60, 0, 2 * Math.PI);
+        context.fillStyle = "yellow";
+        context.fill();
+
+        //tree
+        context.beginPath();
+        context.moveTo(520, 300);
+        context.lineTo(520, 400);
+        context.lineTo(518, 420);
+        context.lineTo(516, 450);
+        context.lineTo(514, 500);
+        context.lineTo(586, 500);
+        context.lineTo(585, 450);
+        context.lineTo(582, 420);
+        context.lineTo(580, 400);
+        context.lineTo(580, 300);
+        context.lineTo(520, 300);
+        context.fillStyle = "#a97f59";
+        context.fill();
+        context.stroke();
+
+        
+        context.beginPath();
+        context.arc(550, 290, 32, 0, 2 * Math.PI);
+        context.fillStyle = "#26b037";
+        context.fill();
+        context.beginPath();
+        context.arc(530, 270, 50, 0, 2 * Math.PI);
+        context.fillStyle = "#26b037";
+        context.fill();
+        context.beginPath();
+        context.arc(510, 250, 50, 0, 2 * Math.PI);
+        context.fillStyle = "#26b037";
+        context.fill();
+        context.beginPath();
+        context.arc(500, 230, 40, 0, 2 * Math.PI);
+        context.fillStyle = "#26b037";
+        context.fill();
+        context.beginPath();
+        context.arc(510, 200, 40, 0, 2 * Math.PI);
+        context.fillStyle = "#26b037";
+        context.fill();
+        context.beginPath();
+        context.arc(530, 190, 40, 0, 2 * Math.PI);
+        context.fillStyle = "#26b037";
+        context.fill();
+        context.beginPath();
+        context.arc(560, 190, 40, 0, 2 * Math.PI);
+        context.fillStyle = "#26b037";
+        context.fill();
+        context.beginPath();
+        context.arc(580, 200, 40, 0, 2 * Math.PI);
+        context.fillStyle = "#26b037";
+        context.fill();
+        context.beginPath();
+        context.arc(590, 220, 40, 0, 2 * Math.PI);
+        context.fillStyle = "#26b037";
+        context.fill();
+        context.beginPath();
+        context.arc(590, 240, 40, 0, 2 * Math.PI);
+        context.fillStyle = "#26b037";
+        context.fill();
+        context.beginPath();
+        context.arc(580, 260, 50, 0, 2 * Math.PI);
+        context.fillStyle = "#26b037";
+        context.fill();
+
+        //apple
+        context.beginPath();
+        context.arc(520, 290, 10, 0, 2 * Math.PI);
+        context.fillStyle = "red";
+        context.fill();
+        context.beginPath();
+        context.moveTo(520, 280);
+        context.lineTo(530, 275);
+        context.stroke();
+
+        context.beginPath();
+        context.arc(500, 260, 10, 0, 2 * Math.PI);
+        context.fillStyle = "red";
+        context.fill();
+        context.beginPath();
+        context.moveTo(500, 250);
+        context.lineTo(510, 245);
+        context.stroke();
+
+        context.beginPath();
+        context.arc(550, 250, 10, 0, 2 * Math.PI);
+        context.fillStyle = "red";
+        context.fill();
+        context.beginPath();
+        context.moveTo(550, 240);
+        context.lineTo(560, 235);
+        context.stroke();
+
+        context.beginPath();
+        context.arc(510, 220, 10, 0, 2 * Math.PI);
+        context.fillStyle = "red";
+        context.fill();
+        context.beginPath();
+        context.moveTo(510, 210);
+        context.lineTo(520, 205);
+        context.stroke();
+
+        context.beginPath();
+        context.arc(570, 200, 10, 0, 2 * Math.PI);
+        context.fillStyle = "red";
+        context.fill();
+        context.beginPath();
+        context.moveTo(570, 190);
+        context.lineTo(580, 185);
+        context.stroke();
+        
+        context.beginPath();
+        context.arc(595, 275, 10, 0, 2 * Math.PI);
+        context.fillStyle = "red";
+        context.fill();
+        context.beginPath();
+        context.moveTo(595, 265);
+        context.lineTo(605, 260);
+        context.stroke();
+
+        
+        
+        
+        
+
+        //Mountain
+        context.beginPath();
+        context.moveTo(0, 300);
+        context.lineTo(30, 250);
+        context.lineTo(50, 290);
+        context.lineTo(70, 200);
+        context.lineTo(90, 220);
+        context.lineTo(110, 170);
+        context.lineTo(140, 220);
+        context.lineTo(170, 210);
+        context.lineTo(200, 170);
+        context.lineTo(230, 200);
+        context.lineTo(290, 250);
+        context.lineTo(350, 277);
+        context.lineTo(400, 300);
+        context.lineTo(400, 500);
+
+        // Create gradient
+        var grd = context.createLinearGradient(0, 0, 800, 0);
+        grd.addColorStop(0, "#c3d4c1");
+        grd.addColorStop(0.5, "#c1cebf");
+        grd.addColorStop(1, "#bec7bd");
+
+        // Fill with gradient
+        context.fillStyle = grd;
+        context.fillRect(0, 300, 400, 500);
+        context.fill();
+        context.stroke(); 
+
+        //Cloud
+        context.beginPath();
+        context.arc(200, 90, 35, 0, 2 * Math.PI);
+        context.fillStyle = "white";
+        context.fill();
+        context.beginPath();
+        context.arc(220, 110, 35, 0, 2 * Math.PI);
+        context.fillStyle = "white";
+        context.fill();
+        context.beginPath();
+        context.arc(250, 110, 35, 0, 2 * Math.PI);
+        context.fillStyle = "white";
+        context.fill();
+        context.beginPath();
+        context.arc(280, 110, 35, 0, 2 * Math.PI);
+        context.fillStyle = "white";
+        context.fill();
+        context.beginPath();
+        context.arc(240, 90, 45, 0, 2 * Math.PI);
+        context.fillStyle = "white";
+        context.fill();
+        context.beginPath();
+        context.arc(280, 90, 40, 0, 2 * Math.PI);
+        context.fillStyle = "white";
+        context.fill();
+        context.beginPath();
+        context.arc(320, 90, 35, 0, 2 * Math.PI);
+        context.fillStyle = "white";
+        context.fill();
+
+        context.beginPath();
+        context.arc(500, 90, 35, 0, 2 * Math.PI);
+        context.fillStyle = "white";
+        context.fill();
+        context.beginPath();
+        context.arc(540, 90, 45, 0, 2 * Math.PI);
+        context.fillStyle = "white";
+        context.fill();
+        context.beginPath();
+        context.arc(580, 90, 40, 0, 2 * Math.PI);
+        context.fillStyle = "white";
+        context.fill();
+        context.beginPath();
+        context.arc(620, 90, 35, 0, 2 * Math.PI);
+        context.fillStyle = "white";
+        context.fill();
+
+        //Ground
+        context.fillStyle = "#6ec078";
+        context.fillRect(0, 500, 800, 600);
+
+        //House
+        context.beginPath();
+        context.moveTo(120, 390);
+        context.lineTo(120, 570);
+        context.lineTo(300, 570);
+        context.lineTo(300, 390);
+        context.lineTo(120, 390);
+        context.fillStyle = "#b5b0a1";
+        context.fill();
+        context.stroke();
+
+        
+       context.beginPath();
+        context.arc(210, 390, 100, -3.14, 0 * Math.PI);
+        context.fillStyle = "#6a542e";
+        context.fill();
+
+        context.beginPath();
+        context.arc(165, 435, 30, 0, 2 * Math.PI);
+        context.fillStyle = "#3674a0";
+        context.fill();
+        context.stroke()
+
+        context.beginPath();
+        context.moveTo(136, 435);
+        context.lineTo(195, 435);
+        context.stroke();
+
+        context.beginPath();
+        context.moveTo(164, 405);
+        context.lineTo(164, 465);
+        context.stroke();
+
+        //Door
+        context.beginPath();
+        context.moveTo(220, 470);
+        context.lineTo(220, 560);
+        context.lineTo(290, 560);
+        context.lineTo(290, 470);
+        context.lineTo(220, 470);
+        context.fillStyle = "#ad8f76";
+        context.fill();
+        context.stroke();
+
+        context.beginPath();
+        context.arc(280, 510, 6, 0, 2 * Math.PI);
+        context.fillStyle = "#848d91";
+        context.fill();
+        context.stroke();
+
+        //For loop to draw grass
+        var x1 = 400,
+          y1 = 500;
+        for (var i = 0; i < 15; i++) {
+          context.beginPath();
+          context.moveTo(x1, y1);
+          context.lineTo(x1 + 15, y1 - 15);
+          context.lineTo(x1 + 30, y1);
+          context.fillStyle = "#08730f";
+          context.fill();
+          context.strokeStyle = "#08730f";
+          x1 += 20;
+          context.stroke();
+        }
+      }
+
+      // when the HTML document has finished, call the changeCanvasColor function.
+      document.addEventListener("DOMContentLoaded", changeCanvasColor);
+    </script>
+  </head>
+
+  <body>
+    <canvas
+      id="mycanvas"
+      width="800"
+      height="600"
+      style="border: 1px solid #000000"
+    ></canvas>
+  </body>
+  <footer>
+    CISC 3610 Jianbin Tang <a href="../index.html">Return to main page</a>
+  </footer>
+  </html>
